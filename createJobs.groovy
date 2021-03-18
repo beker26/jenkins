@@ -14,7 +14,7 @@ pipelineJob('theme-park-job') {
                     remote {
                         url 'https://github.com/beker26/passeio.git'
                     }
-                    branch 'refs/remotes/origin/master'
+                    branch 'master'
                 }
             }
         }
