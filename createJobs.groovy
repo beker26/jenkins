@@ -21,15 +21,15 @@ pipelineJob('theme-park-job') {
     }
 }
 
-pipelineJob ( 'theme-park-job-docker' ) { 
-    definição {
+pipelineJob('theme-park-job-docker') {
+    definition {
         cpsScm {
             scm {
                 git {
-                    remoto {
+                    remote {
                         url 'https://github.com/beker26/passeio.git'
                     }
-                    ramo 'master'
+                    branch 'master'
                     scriptPath('Jenkinsfile-docker')
                 }
             }
